@@ -1,0 +1,63 @@
+<style>
+
+@font-face{
+  font-family:"Antenna Cond Black";
+  src:
+    url('./AntennaCond-Black.otf')
+    format('opentype');
+}
+h1 {
+  font-family: "Antenna Cond Black","Helvetica","sans-serif";
+  color: #eb1478;
+  text-align: center;
+  font-size: 80pt;
+  font-size: 8vw;
+  margin: 2.5%;
+}
+body {
+  background-color: black;
+}
+.twitter-timeline{
+  text-align: center;
+}
+.center{
+  width:500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.center-clock{
+	  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+<body>
+<h1> IGG College Night <h1>
+<h1 id="title"> Project Aura </h1>
+<h1 id="date"> July 10 <h1>
+<h1 id="time">5:00 PM </h1>
+<div class="center">
+<div class="clock-builder-output"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="clock_assets/flipclock.js"></script>
+<style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }</style>
+<script type="text/javascript">
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	var opts = {
+		clockFace: 'HourCounter',
+		countdown: true,
+		language: 'Custom'
+	};  
+	var countdown = 1436576400 - ((new Date().getTime())/1000); // from: 07/10/2015 05:00 pm -0800
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output').FlipClock(countdown, opts);
+});
+</script>
+</div>
+<div class="center">
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/projectaura" data-widget-id="618326731569541120"  data-chrome="nofooter noborders noscrollbar transparent noheader">#ProjectAura Tweets</a> </div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
